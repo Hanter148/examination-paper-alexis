@@ -1,0 +1,269 @@
+@media only screen and (min-width:1545px){
+    
+    .row2 {
+        justify-content: space-evenly;
+    }
+    
+}
+
+@media only screen and (min-width:1400px){
+    
+    .row2 {
+        justify-content: space-evenly;
+    }
+    
+}
+
+@media only screen and (max-width:1305px){
+    
+    .row2 {
+        justify-content: space-evenly;
+    }
+    
+}
+
+@media only screen and (max-width:1024px){
+    
+    .menu-btn {
+    display: block;
+    }
+
+    .navbar {
+        padding: 0;
+    }
+    .logo {
+        position: absolute;
+        margin: -900px;
+    }
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        background: whitesmoke;
+        margin-top: -66px;
+        transition: all 0.5s ease;
+    }
+
+    .mobile-menu {
+        margin-top: 0px;
+        border-bottom-right-radius: 30%;
+
+    }
+    .nav-links li {
+        margin: 10px auto;
+    }
+
+    /* Header */
+    
+    .header-content h1 {
+        width: 80%;
+        margin-top: 50px;
+        margin-bottom: 30px;
+        margin-left: 96px;
+        font-weight: normal;
+    }
+
+    /* Розділ 2, 3 */
+
+    .row {
+        flex-direction: column;
+    }
+
+    .row .col {
+        margin: 20px auto;
+    }
+    .col .img {
+        max-width: 90%;
+    }   
+
+    /* Розід 4, 5, 6, 7, 8 */
+
+    .explore-content {
+        width: 100%;
+    }
+
+    .portfolio .col {
+        width: 100%;
+    }
+
+    .image-gallery {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .image-gallery img {
+        width: 90%;
+    }
+
+    .img-content {
+        width: 96.3%;
+    }
+
+    #fon {
+        flex-direction: row;
+    }
+
+    #foot {
+        flex-direction: row;
+    }
+    .footer {
+        padding: 10px;
+    }
+}
+
+@media only screen and (max-width:705px){
+    
+    .header-content h1 {        
+        margin-left: 64px;
+    }
+    
+    #sect7 {
+        margin: 0 55px 70px;
+    }
+    #fon {
+        padding: 20px;
+    }
+
+    #fon p {
+        padding-right: 14px;
+    }
+
+    #foot .col {
+        margin-right: 0;
+    }
+    
+}
+
+@media only screen and (max-width:560px){
+
+    .header-content h1 {        
+        margin-left: 58px;
+    }
+
+    .adv_h3_1 {
+        left: -73px;
+    }
+
+    .title2 h6 {
+        margin: 25px 0px 20px 0px;
+    }
+
+}
+
+@media only screen and (max-width:540px){
+    .nav-links {
+        height: 75vh;        
+    }
+
+    .nav-links {
+        margin-top: -2px;
+    }
+
+    header {
+        height: 60vh;
+        background-size: 726px 300px;
+        background-repeat: no-repeat;
+        background-position: top;
+    }
+
+    .header-content {
+        height: 90%;
+        width: 92%;
+    }
+
+    .header-content h1 {
+        font-size: 28px;
+        margin-left: 43px;
+        margin-top: 40px;
+        margin-bottom: 12px;
+    }
+
+    .ctn {
+        padding: 8px 17px;
+    }
+
+    .advertising {
+        height: 35%;
+        margin: 0;
+    }
+
+
+    #initial {
+        margin-top: 17px;
+        gap: 19px;
+    }
+
+    .adv_h3_1 {
+        width: 81px;
+        text-align: center;
+    }
+
+    .adv_h3_2 {
+        height: 20px;
+    }
+
+    .adv_h3_3 {
+        width: 89px;
+        text-align: center;
+    }
+
+    #images, #a_images, #q_images {
+        height: 20px;
+        width: 25px;
+}
+    .footer {
+        height: 40%;
+    }
+}
+
+@media only screen and (max-width:380px){
+    .header-content h1 {
+        font-size: 24px;
+        margin-left: 23px;
+    }
+    #initial {
+        margin-top: 36px;
+    }
+    .events2 {
+        padding: 35px 75px 49px 75px;
+    }
+   .img2 {
+        height: 117px;
+        width: 218px;
+   }
+   .portfolio {
+    padding: 60px;
+    }
+    .nav-links {
+        height: 62vh;
+    }
+    #Our-Focus {
+        margin-top: -10px;
+    }
+}
+
+@media (hover: hover) {
+    a:hover{
+        transition: 2s;
+    }    
+    .img1:hover {
+        transform: scale(1.1);
+    }
+    .col2 .img2:hover {
+        box-shadow: 10px 10px 0px #96e1d4;
+        transform: translateY(-10px) translateX(-10px);
+    }
+    .image-gallery img:hover {
+        clip-path: inset(0 0 44px 0);
+    }
+    .ctn:hover {
+        background-color: whitesmoke;
+        color: #ec2323;
+        box-shadow: 2px 2px 5px black;
+    }
+    li:hover {
+        color: #ec2323;
+        cursor: pointer;
+    }
+}

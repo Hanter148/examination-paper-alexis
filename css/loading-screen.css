@@ -1,0 +1,101 @@
+
+main {
+    visibility: hidden;
+    opacity: 0;
+    animation: main-content 0s 6s forwards; 
+}
+
+span {
+  font-weight: 200;
+  position: absolute;
+  font-size: 70px;
+  text-align: center;
+  display: block;
+  color: rgb(18, 174, 85);
+  top: 50%;
+  width: 100%;
+  margin-top: -55px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  overflow: hidden;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform: translate3d(0,0,0);
+  -moz-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0); 
+  opacity: 0;
+  animation: anim 3.2s ease-out forwards 1s;
+ }
+
+/* Загрузочне вікно потім появляється головне */
+ @keyframes main-content {
+    0% { 
+        visibility: hidden; 
+        opacity: 0;       
+    }
+        
+    100% { 
+        visibility: visible; 
+        opacity: 1;              
+    }
+}
+
+@keyframes skroll {
+    from {
+        overflow-y: hidden;
+    }
+    to {
+        overflow-y: overlay; 
+    }
+}
+
+@keyframes anim {
+  0% {
+    text-shadow: 0 0 50px #fff;
+    letter-spacing: 80px;
+    opacity: 0;
+    -moz-transform: rotateY(-90deg);
+  }
+  50% {
+    text-shadow: 0 0 1px #fff;
+    opacity: 0.8;
+    -moz-transform: rotateY(0deg);
+  }
+  75% {
+    text-shadow: 0 0 1px #fff;
+    opacity: 0.8;
+    -moz-transform: rotateY(0deg) translateZ(60px);
+  }
+  100% {
+    text-shadow: 0 0 1px #fff;
+    opacity: 0.8;
+    letter-spacing: 8px;
+    -moz-transform: rotateY(0deg) translateZ(100px);
+  }
+}
+
+@-webkit-keyframes anim {
+  0% {
+    text-shadow: 0 0 50px #fff;
+    letter-spacing: 80px;
+    opacity: 0;
+    -webkit-transform: rotateY(-90deg);
+  }
+  50% {
+    text-shadow: 0 0 1px #fff;
+    opacity: 0.8;
+    -webkit-transform: rotateY(0deg);
+  }
+  75% {
+    text-shadow: 0 0 1px #fff;
+    opacity: 0.8;
+    -webkit-transform: rotateY(0deg) translateZ(60px);
+  }
+  100% {
+    text-shadow: 0 0 1px #fff;
+    opacity: 0.8;
+    letter-spacing: 8px;
+    -webkit-transform: rotateY(0deg) translateZ(100px);
+  }
+}
